@@ -1,0 +1,44 @@
+/*nav {
+    font-family:Calibri, serif;
+    background-color: black;
+    color: white;
+    width:100%;
+}
+
+nav > ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav > ul > li{
+    float:left
+}
+
+nav li {
+    list-style:none;
+}
+
+.sous_menu {
+    display:none
+}
+
+nav > ul::after {
+    content:"";
+    display:block;
+    clear: both;
+}
+
+nav a {
+    display:inline-block
+}*/
+
+.imgH {
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(hatsune_miku.jpg);
+}
+
+

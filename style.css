@@ -1,41 +1,376 @@
+/* 1er partie : Menu déroulant/Header */
 
 
 header{
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
-    font:12px;
+    align-items: center;
+    flex-direction: column;
+    font-size:200%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(41, 41, 41);
+}
+
+.bandehaut {
+    height: 10%;
+    display: flex;
+    justify-content: left;
+    background-color: rgb(41, 41, 41);
+    width: 100%;
 }
 
 .menuderoulant {
-    height : 80px;
+    height: 50px;
+    margin-top: 3vh;
+    margin-bottom: 40px;
     list-style: none;
-    padding:10px;
-    margin:40px;
-}
-
-.menuderoulant li {
-    float: left;
-    width: 200px;
-    list-style:none;
-}
-
-.menuderoulant li a:link, .menuderoulant li a:visited {
-    display: block;
-    color: white;
-    background:rgb(32, 32, 32);
-    padding : 6px 10px;
-    border-right:1px solid white ;
-    text-align: center;
-    text-decoration: none;
-}
-
-.menuderoulant li a:hover {
-    text-shadow:0 0 5px rgb(228, 67, 8), 0 0 10px rgb(228, 67, 8);
+    .sous_menu {
+        list-style-type: none;
+        display: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        li {
+            float: none;
+            margin:0;
+            padding: 0;
+            border-top:1px solid transparent;
+            border-right: 1px solid transparent;
+            a:link, a:visited {
+                display: block;
+                color: white;
+                text-decoration: none;
+                background-color: rgb(32, 32, 32);
+            }
+            a:hover{
+                text-shadow: 0 0 10px aqua, 0 0 5px aqua;
+            }
+        }
+    }
+    li {
+        float: left;
+        width: 150px;
+        border: 1px solid gray;
+        list-style:none;
+        a:active {
+            background-color: gray;
+        }
+        a:hover {
+            text-shadow: 0 0 10px aqua, 0 0 5px aqua;
+        }
+        a:link, a:visited {
+            display: block;
+            color: white;
+            background:rgb(41, 41, 41);
+            text-align: center;
+            text-decoration: none;
+        }
+    }
+    li:hover .sous_menu{
+        display: block;
+    }
 }
 
 .imgH {
-    max-width: 100%;
-    max-height: 500px;
+    width:100%;
+    min-height: 500px;
+    background-image: url(hatsune_miku.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    margin-bottom:-200px
 }
+
+/* 2e partie : Biographie */
+
+#bio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin:10%;
+    border-radius: 20px;
+    box-shadow: 0 0 7px 1px turquoise;
+}
+
+#bio h1 {
+    font-size:60px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 8px gray;
+}
+
+#bio p, #Lartistes p {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 8px gray;
+}
+
+/* 3e partie : Artistes */
+
+#Lartistes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15%;
+}
+
+#omoi, #deco27, #pinocchiop {
+    border-radius: 20px;
+}
+
+.description {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight:bold;
+    color: white;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    margin-right: 150px;
+    margin-top:10px
+}
+
+.logo {
+    border-radius: 200px;
+    max-height:100px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.name a {
+    text-decoration: none;
+}
+
+.artiste {
+    margin-bottom: 50px;
+}
+
+.links {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:50px;
+}
+
+
+    
+
+.button {
+    display: block;
+    min-height: 20px;
+    min-width: 250px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom:10px;
+    border-radius:50px;
+    p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.button:hover {
+    box-shadow: 3px 3px 4px black;
+    transform: scale(1.05);
+}
+
+#deco27 {
+    box-shadow: 0 0 7px 1px rgb(30,19,17);
+    background-color: rgb(27, 25, 25);
+    .button {
+        background-color: white;
+        p {
+            color: black;
+        }
+    }
+    .name {
+        text-shadow: 0 0 6px gray;
+    }
+    .name:hover {
+        text-shadow: 0 0 10px gray;
+    }
+    h2:hover {
+        transform: scale(1.05);
+    }
+
+}
+
+#pinocchiop {
+    box-shadow: 0 0 7px 1px rgb(255,75,140);
+    background-color: rgb(54, 15, 30);
+    .button {
+        background-color: rgb(63, 190, 163);
+    }
+    .name {
+        text-shadow: 0 0 3px rgb(255,75,140);
+    }
+    .name:hover {
+        text-shadow: 0 0 10px rgb(255,75,140);
+    }
+    h2:hover {
+        transform: scale(1.05);
+    }
+    
+}
+
+
+#omoi {
+    box-shadow: 0 0 7px 1px #e0fdf9;
+    background-color:#334240 ;
+    .button {
+        background-color: black;
+    }
+    .name {
+        text-shadow: 0 0 3px #e0fdf9;
+    }
+    .name:hover {
+        text-shadow: 0 0 10px #e0fdf9;
+    }
+    h2:hover {
+        transform: scale(1.05);
+    }
+}
+
+
+/* 4e partie : Menu déroulant du bas */
+
+footer{
+    min-height:300px;
+    border-top: 1px solid  gray;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    font-size:200%;
+    width: 100%;
+    align-items:center;
+    justify-content: left;
+    background-color: rgb(15, 15, 15);
+}
+
+.menu {
+    width: 60px;
+    min-height: 50px;
+    list-style: none;
+    .sous_menu {
+        list-style-type: none;
+        display: none;
+        padding: 0;
+        margin: 0;
+        position:absolute;
+        li {
+            float: none;
+            margin:0;
+            padding: 0;
+            border-top:1px solid transparent;
+            border-right: 1px solid transparent;
+            a:link, a:visited {
+                display: block;
+                text-align: center;
+                color: white;
+                text-decoration: none;
+                background-color: rgb(15, 15, 15);
+            }
+            a:hover{
+                text-shadow: 0 0 10px aqua, 0 0 5px aqua;
+            }
+        }
+    }
+    li {
+        width: 170px;
+        height:100px;
+        border: 1px solid gray;
+        list-style:none;
+        a:active {
+            background-color: gray;
+        }
+        p:hover {
+            text-shadow: 0 0 10px aqua, 0 0 5px aqua;
+        }
+        a:link, a:visited {
+            display: block;
+            color: white;
+            background:rgb(15, 15, 15);
+            text-align: center;
+            text-decoration: none;
+        }
+    }
+    li:hover .sous_menu{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* 2e page */
+
+#song {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin:10%;
+    border-radius: 20px;
+    h1 {
+        font-size:60px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 0 0 8px gray;
+    }
+    p {
+        font-size: 30px;
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 8px gray;
+    }
+}
+
+.pack {
+    p {
+        font-size: 30px;
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 8px gray;
+    }
+    h2 {
+        font-size:75px;
+        text-shadow: 0 0 10px gray;
+        text-align: center;
+    }
+}
+
+#Sdeco27, #Somoi, #Spinocchiop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    li {
+        display: flex;
+        flex-direction:column;
+        p {
+            font-size: 50px;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+

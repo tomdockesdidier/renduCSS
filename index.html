@@ -6,27 +6,83 @@
     <title>Hatsune Miku</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" rel="stylesheet">
 </head>
 <header>
+    <section class="bandehaut">
         <ul class="menuderoulant">
-            <li><a href="#">Accueil</a>
+            <li><a href="index.html">Accueil</a>
                 <ul class="sous_menu">
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Biographie</a></li>
-                    <li><a href="#">Artistes</a></li>
+                    <li><a href="index.html#bio">Biographie</a></li>
+                    <li><a href="index.html#Lartistes">Artistes</a></li>
                 </ul>
             </li>
-            <li><a href="#">Artistes</a>
+            <li><a href="song.html">Chansons</a>
                 <ul class="sous_menu">
-                    <li><a href="#">Deco*27</a></li>
-                    <li><a href="#">PinocchioP</a></li>
-                    <li><a href="#">Omoi</a></li>
+                    <li><a href="song.html#Sdeco27">Deco*27</a></li>
+                    <li><a href="song.html#Spinocchiop">PinocchioP</a></li>
+                    <li><a href="song.html#Somoi">Omoi</a></li>
                 </ul>
             </li>
         </ul>
-    <!-- <img class="imgH" src="hatsune_miku.jpg"> -->
+    </section>
+    <div class="imgH"></div>
 </header>
 <body>
-    
+    <section id="bio">
+        <h1>Hatsune Miku</h1>
+        <p class="description">Hatsune Miku est une chanteuse virtuelle apparu le 31 août 2007, en tant qu'avatar commercial de la première série des Vocaloid, s'exprimant par le biais d'une application de synthèse vocale développée par Crypton Future Media. Elle est représentée en une jeune fille de 16 ans avec de longues couettes turquoises, des yeux turquoises et une tenue futuriste rappelant l'uniforme scolaire japonais. Elle est la plus célèbre Vocaloid du monde et réalise des concerts sous forme d'hologramme.</p>
+    </section>
+    <section id="Lartistes">
+        <div class="artiste" id="deco27">
+            <div class="name">
+                <a href="https://www.youtube.com/@DECO27"><img class="logo" src="deco27.jpg"></a>
+                <a class="namealone" href="song.html#Sdeco27"><h2>Deco*27</h2></a>
+            </div>
+            <p class="description">Deco*27 est un compositeur et guitariste japonais né le 16 décembre 1986, il compose des chansons depuis 2008 utilisant majoritairement Hatsune Miku. Il compose également depuis 2020 pour des jeux-vidéos et des animés.</p>
+            <div class="links">
+                <a class="button" href="https://vocaloid.fandom.com/wiki/DECO*27"><p>En savoir plus</p></a>
+                <a class="button" href="song.html#Sdeco27"><p>Chansons</p></a>
+            </div>
+        </div>
+        <div class="artiste" id="pinocchiop">
+            <div class="name">
+                <a href="https://www.youtube.com/@pinocchiop"><img class="logo" src="pinocchiop.jpg"></a>
+                <a class="namealone" href="song.html#Spinocchiop"><h2>Pinocchio-P</h2></a>
+            </div>
+            <p class="description">Pinocchio-P est un compositeur Vocaloid se démarquant par les paroles "uniques" de ses chansons. Il compose depuis 2009 et utilise principalement Hatsune Miku, mais a parfois également composé avec Kagamine Rin, Kagamine Len, GUMI et MAYU (d'autres vocaloid)</p>
+            <div class="links">
+                <a class="button" href="https://vocaloid.fandom.com/wiki/Pinocchio-P"><p>En savoir plus</p></a>
+                <a class="button" href="song.html#Spinocchiop"><p>Chansons</p></a>
+            </div>
+        </div>
+        <div class="artiste" id="omoi">
+            <div class="name">
+                <a href="https://www.youtube.com/@Omoi"><img class="logo" src="omoi.jpg"></a>
+                <a class="namealone" href="song.html#Somoi"><h2>Omoi</h2></a>
+            </div>
+            <p class="description">Omoi est un duo formé par Sakurai et Kimura. Ils sont spécialisés dans la production de rock synthétisé. Sakurai fait les paroles, la composition, l'accord et la batterie, tandis que Kimura s'occupe du synthétiseur, du piano et de la guitare. Ils utilisent majoritairement Htatsune Miku dans leurs chansons, mais ils utilisent également Rin, GUMI et IA pour des choeurs en fond</p>
+            <div class="links">
+                <a class="button" href="https://vocaloid.fandom.com/wiki/Omoi"><p>En savoir plus</p></a>
+                <a class="button" href="song.html#Somoi"><p>Chansons</p></a>
+            </div>
+        </div>
+    </section>
 </body>
+<footer>
+    <section class="bande_bas">
+        <ul class="menu">
+            <li><a href=""><p>Wiki</p></a>
+                <ul class="sous_menu">
+                    <li><a href="https://fr.wikipedia.org/wiki/Hatsune_Miku"><p>Hatsune Miku</p></a></li>
+                    <li><a href="https://vocaloid.fandom.com/wiki/DECO*27"><p>Deco*27</p></a></li>
+                    <li><a href="https://vocaloid.fandom.com/wiki/Pinocchio-P"><p>Pinocchio-P</p></a></li>
+                    <li><a href="https://vocaloid.fandom.com/wiki/Omoi"><p>Omoi</p></a></li>
+                </ul>
+            </li>
+            <li><a href="index.html"><p>Accueil</p></a></li>
+            <li><a href="song.html"><p>Chansons</p></a></li>
+        </ul>
+    </section>
+</footer>
 </html>

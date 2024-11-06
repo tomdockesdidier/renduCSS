@@ -276,6 +276,7 @@ footer{
         margin: 0;
         position:absolute;
         li {
+            transform: translate(170px, -100%);
             float: none;
             margin:0;
             padding: 0;
@@ -314,7 +315,7 @@ footer{
     }
     li:hover .sous_menu{
         display: flex;
-        flex-direction: row;
+        flex-direction: row;       
     }
 }
 

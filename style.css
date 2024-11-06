@@ -1,44 +1,41 @@
-/*nav {
-    font-family:Calibri, serif;
-    background-color: black;
-    color: white;
-    width:100%;
-}
 
-nav > ul {
+
+header{
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    font:12px;
 }
 
-nav > ul > li{
-    float:left
+.menuderoulant {
+    height : 80px;
+    list-style: none;
+    padding:10px;
+    margin:40px;
 }
 
-nav li {
+.menuderoulant li {
+    float: left;
+    width: 200px;
     list-style:none;
 }
 
-.sous_menu {
-    display:none
+.menuderoulant li a:link, .menuderoulant li a:visited {
+    display: block;
+    color: white;
+    background:rgb(32, 32, 32);
+    padding : 6px 10px;
+    border-right:1px solid white ;
+    text-align: center;
+    text-decoration: none;
 }
 
-nav > ul::after {
-    content:"";
-    display:block;
-    clear: both;
+.menuderoulant li a:hover {
+    text-shadow:0 0 5px rgb(228, 67, 8), 0 0 10px rgb(228, 67, 8);
 }
-
-nav a {
-    display:inline-block
-}*/
 
 .imgH {
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(hatsune_miku.jpg);
+    max-width: 100%;
+    max-height: 500px;
 }
-
-

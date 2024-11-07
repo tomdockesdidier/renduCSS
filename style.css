@@ -1,5 +1,18 @@
-/* 1er partie : Menu déroulant/Header */
+/* Base */
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(41, 41, 41);
+}
+
+h2 {
+    font-size: 40px;
+    font-weight:bold;
+    color: white;
+}
+
+/* Header */
 
 header{
     padding: 0;
@@ -9,247 +22,76 @@ header{
     flex-direction: column;
     font-size:200%;
     width: 100%;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(41, 41, 41);
-}
-
-.bandehaut {
-    height: 10%;
-    display: flex;
-    justify-content: left;
-    background-color: rgb(41, 41, 41);
-    width: 100%;
-}
-
-.menuderoulant {
-    height: 50px;
-    margin-top: 3vh;
-    margin-bottom: 40px;
-    list-style: none;
-    .sous_menu {
-        list-style-type: none;
-        display: none;
-        padding: 0;
-        margin: 0;
-        position: absolute;
-        li {
-            float: none;
-            margin:0;
+    .bandehaut {
+        height: 10%;
+        display: flex;
+        justify-content: left;
+        background-color: rgb(41, 41, 41);
+        width: 100%;
+    }
+    /* Menu déroulant */
+    .menuderoulant {
+        height: 50px;
+        margin-top: 3vh;
+        margin-bottom: 40px;
+        list-style: none;
+        .sous_menu {
+            list-style-type: none;
+            display: none;
             padding: 0;
-            border-top:1px solid transparent;
-            border-right: 1px solid transparent;
+            margin: 0;
+            position: absolute;
+            li {
+                float: none;
+                margin:0;
+                padding: 0;
+                border-top:1px solid transparent;
+                border-right: 1px solid transparent;
+                a:link, a:visited {
+                    display: block;
+                    color: white;
+                    text-decoration: none;
+                    background-color: rgb(32, 32, 32);
+                }
+                a:hover{
+                    text-shadow: 0 0 10px aqua, 0 0 5px aqua;
+                }
+            }
+        }
+        li {
+            float: left;
+            width: 150px;
+            border: 1px solid gray;
+            list-style:none;
+            a:active {
+                background-color: gray;
+            }
+            a:hover {
+                text-shadow: 0 0 10px aqua, 0 0 5px aqua;
+            }
             a:link, a:visited {
                 display: block;
                 color: white;
+                background:rgb(41, 41, 41);
+                text-align: center;
                 text-decoration: none;
-                background-color: rgb(32, 32, 32);
-            }
-            a:hover{
-                text-shadow: 0 0 10px aqua, 0 0 5px aqua;
             }
         }
-    }
-    li {
-        float: left;
-        width: 150px;
-        border: 1px solid gray;
-        list-style:none;
-        a:active {
-            background-color: gray;
-        }
-        a:hover {
-            text-shadow: 0 0 10px aqua, 0 0 5px aqua;
-        }
-        a:link, a:visited {
+        li:hover .sous_menu{
             display: block;
-            color: white;
-            background:rgb(41, 41, 41);
-            text-align: center;
-            text-decoration: none;
         }
     }
-    li:hover .sous_menu{
-        display: block;
+    .imgH {
+        width:100%;
+        min-height: 500px;
+        background-image: url(hatsune_miku.jpg);
+        background-size:100%;
+        background-repeat: no-repeat;
+        margin-bottom:-200px
     }
 }
 
-.imgH {
-    width:100%;
-    min-height: 500px;
-    background-image: url(hatsune_miku.jpg);
-    background-size:100%;
-    background-repeat: no-repeat;
-    margin-bottom:-200px
-}
-
-/* 2e partie : Biographie */
-
-#bio {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin:10%;
-    border-radius: 20px;
-    box-shadow: 0 0 7px 1px turquoise;
-}
-
-#bio h1 {
-    font-size:60px;
-    font-weight: bold;
-    color: white;
-    text-shadow: 0 0 8px gray;
-}
-
-#bio p, #Lartistes p {
-    font-size: 30px;
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 8px gray;
-}
-
-/* 3e partie : Artistes */
-
-#Lartistes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 15%;
-}
-
-#omoi, #deco27, #pinocchiop {
-    border-radius: 20px;
-}
-
-.description {
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-h2 {
-    font-size: 40px;
-    font-weight:bold;
-    color: white;
-}
-
-.name {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 50px;
-    margin-right: 150px;
-    margin-top:10px
-}
-
-.logo {
-    border-radius: 200px;
-    max-height:100px;
-}
-
-.logo:hover {
-    transform: scale(1.1);
-}
-
-.name a {
-    text-decoration: none;
-}
-
-.artiste {
-    margin-bottom: 50px;
-}
-
-.links {
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap:50px;
-}
-
-
-    
-
-.button {
-    display: block;
-    min-height: 20px;
-    min-width: 250px;
-    text-align: center;
-    text-decoration: none;
-    margin-bottom:10px;
-    border-radius:50px;
-    p {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-}
-
-.button:hover {
-    box-shadow: 3px 3px 4px black;
-    transform: scale(1.05);
-}
-
-#deco27 {
-    box-shadow: 0 0 7px 1px rgb(30,19,17);
-    background-color: rgb(27, 25, 25);
-    .button {
-        background-color: white;
-        p {
-            color: black;
-        }
-    }
-    .name {
-        text-shadow: 0 0 6px gray;
-    }
-    .name:hover {
-        text-shadow: 0 0 10px gray;
-    }
-    h2:hover {
-        transform: scale(1.05);
-    }
-
-}
-
-#pinocchiop {
-    box-shadow: 0 0 7px 1px rgb(255,75,140);
-    background-color: rgb(54, 15, 30);
-    .button {
-        background-color: rgb(63, 190, 163);
-    }
-    .name {
-        text-shadow: 0 0 3px rgb(255,75,140);
-    }
-    .name:hover {
-        text-shadow: 0 0 10px rgb(255,75,140);
-    }
-    h2:hover {
-        transform: scale(1.05);
-    }
-    
-}
-
-
-#omoi {
-    box-shadow: 0 0 7px 1px #e0fdf9;
-    background-color:#334240 ;
-    .button {
-        background-color: black;
-    }
-    .name {
-        text-shadow: 0 0 3px #e0fdf9;
-    }
-    .name:hover {
-        text-shadow: 0 0 10px #e0fdf9;
-    }
-    h2:hover {
-        transform: scale(1.05);
-    }
-}
-
-
-/* 4e partie : Menu déroulant du bas */
+/* Footer */
 
 footer{
     min-height:300px;
@@ -263,53 +105,180 @@ footer{
     align-items:center;
     justify-content: left;
     background-color: rgb(15, 15, 15);
+    /* Menu déroulant */
+    .menu {
+        width: 60px;
+        min-height: 50px;
+        list-style: none;
+        .sous_menu {
+            transform: translate(170px, -100%);
+            list-style-type: none;
+            display: none;
+            padding: 0;
+            margin: 0;
+            position:absolute;
+            li {
+                .miku {
+                    transform: translateY(-17px);
+                    height: 40px;
+                }
+            }
+        }
+        li {
+            margin:0;
+            padding: 0;
+            width: 170px;
+            height:100px;
+            border: 1px solid gray;
+            list-style:none;
+            a:active {
+                background-color: gray;
+            }
+            a:hover {
+                text-shadow: 0 0 10px aqua, 0 0 5px aqua;
+            }
+            a:link, a:visited {
+                display: block;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+        li:hover .sous_menu{
+            display: flex;
+            flex-direction: row;       
+        }
+    }
 }
 
-.menu {
-    width: 60px;
-    min-height: 50px;
-    list-style: none;
-    .sous_menu {
-        transform: translate(170px, -100%);
-        list-style-type: none;
-        display: none;
-        padding: 0;
-        margin: 0;
-        position:absolute;
-        li {
-            .miku {
-                transform: translateY(-17px);
-                height: 40px;
+/* Page 1 : Biographie */
+
+#bio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin:10%;
+    border-radius: 20px;
+    box-shadow: 0 0 7px 1px turquoise;
+    h1 {
+        font-size:60px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 0 0 8px gray;
+    }
+}
+
+#bio p, #Lartistes p {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 8px gray;
+}
+
+/* Page 1 : Liste Artistes */
+
+#Lartistes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15%;
+    #pinocchiop {
+        box-shadow: 0 0 7px 1px rgb(255,75,140);
+        background-color: rgb(54, 15, 30);
+        .button {
+            background-color: rgb(63, 190, 163);
+        }
+        .name {
+            text-shadow: 0 0 3px rgb(255,75,140);
+        }
+        .name:hover {
+            text-shadow: 0 0 10px rgb(255,75,140);
+        }
+    }
+    #deco27 {
+        box-shadow: 0 0 7px 1px rgb(30,19,17);
+        background-color: rgb(27, 25, 25);
+        .button {
+            background-color: white;
+            p {
+                color: black;
+            }
+        }
+        .name {
+            text-shadow: 0 0 6px gray;
+        }
+        .name:hover {
+            text-shadow: 0 0 10px gray;
+        }    
+    }
+    #omoi {
+        box-shadow: 0 0 7px 1px #e0fdf9;
+        background-color:#334240 ;
+        .button {
+            background-color: black;
+        }
+        .name {
+            text-shadow: 0 0 3px #e0fdf9;
+        }
+        .name:hover {
+            text-shadow: 0 0 10px #e0fdf9;
+        }
+    }
+    .artiste {
+        border-radius: 20px;
+        margin-bottom: 50px;
+        h2:hover {
+            transform: scale(1.05);
+        }
+        .name {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 50px;
+            margin-right: 150px;
+            margin-top:10px;
+            .logo {
+                border-radius: 200px;
+                max-height:100px;
+            }
+            .logo:hover {
+                transform: scale(1.1);
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+        .description {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .links {
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap:50px;
+            .button {
+                display: block;
+                min-height: 20px;
+                min-width: 250px;
+                text-align: center;
+                text-decoration: none;
+                margin-bottom:10px;
+                border-radius:50px;
+                p {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+            .button:hover {
+                transform: scale(1.05);
             }
         }
     }
-    li {
-        margin:0;
-        padding: 0;
-        width: 170px;
-        height:100px;
-        border: 1px solid gray;
-        list-style:none;
-        a:active {
-            background-color: gray;
-        }
-        a:hover {
-            text-shadow: 0 0 10px aqua, 0 0 5px aqua;
-        }
-        a:link, a:visited {
-            display: block;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-        }
-    }
-    li:hover .sous_menu{
-        display: flex;
-        flex-direction: row;       
-    }
 }
 
-/* 2e page */
+/* Page 2 : Liste chansons*/
 
 #song {
     display: flex;
@@ -329,45 +298,37 @@ footer{
         color: white;
         text-shadow: 2px 2px 8px gray;
     }
-}
-
-.pack {
-    h2 {
-        font-size:50px;
-        text-shadow: 0 0 10px gray;
-        text-align: center;
-    }
-    a {
-        width: 356px;
-    }
-    img {
-        width: 356px;
-    }
-}
-
-#Sdeco27, #Somoi, #Spinocchiop {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
-    li {
-        display: flex;
-        flex-direction:column;
-        p {
-            font-size: 50px;
+    .pack {
+        h2 {
+            font-size:50px;
+            text-shadow: 0 0 10px gray;
+            text-align: center;
         }
         a {
-            text-decoration: none;
+            width: 356px;
         }
-        a:hover {
-            transform: scale(1.1);
+        img {
+            width: 356px;
         }
     }
-}
-
-.miku {
-    display:block;
-    width:172.5px;
-    height: 102.5px;
+    #Sdeco27, #Somoi, #Spinocchiop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        li {
+            display: flex;
+            flex-direction:column;
+            p {
+                font-size: 50px;
+            }
+            a {
+                text-decoration: none;
+            }
+            a:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
 }

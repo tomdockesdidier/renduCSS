@@ -25,7 +25,7 @@ header{
     .bandehaut {
         height: 10%;
         display: flex;
-        justify-content: left;
+        justify-content: flex-start;
         background-color: rgb(41, 41, 41);
         width: 100%;
     }
@@ -84,10 +84,10 @@ header{
     .imgH {
         width:100%;
         min-height: 500px;
-        background-image: url(hatsune_miku.jpg);
+        background-image: url(images/hatsune_miku.jpg);
         background-size:100%;
         background-repeat: no-repeat;
-        margin-bottom:-200px
+        margin-bottom:-200px;
     }
 }
 
@@ -105,7 +105,7 @@ footer{
     align-items:center;
     justify-content: left;
     background-color: rgb(15, 15, 15);
-    /* Menu déroulant */
+    /* Menu déroulant du bas */
     .menu {
         width: 60px;
         min-height: 50px;
@@ -151,7 +151,7 @@ footer{
     }
 }
 
-/* Page 1 : Biographie */
+/* 2e partie : Biographie */
 
 #bio {
     display: flex;
@@ -175,7 +175,7 @@ footer{
     text-shadow: 2px 2px 8px gray;
 }
 
-/* Page 1 : Liste Artistes */
+/* 3e partie : Liste Artistes */
 
 #Lartistes {
     display: flex;
@@ -272,13 +272,14 @@ footer{
                 }
             }
             .button:hover {
+                box-shadow: 3px 3px 4px black;
                 transform: scale(1.05);
             }
         }
     }
 }
 
-/* Page 2 : Liste chansons*/
+/* 2e page : Liste de chansons*/
 
 #song {
     display: flex;

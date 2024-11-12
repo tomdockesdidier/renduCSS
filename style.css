@@ -4,10 +4,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(41, 41, 41);
+    font-size: 20px;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 20px;
     font-weight:bold;
     color: white;
 }
@@ -20,7 +21,7 @@ header{
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-size:200%;
+    font-size:1.5em;
     width: 100%;
     .bandehaut {
         height: 10%;
@@ -100,7 +101,7 @@ footer{
     margin: 0;
     display: flex;
     flex-direction: row;
-    font-size:200%;
+    font-size:32px;
     width: 100%;
     align-items:center;
     justify-content: left;
@@ -144,9 +145,11 @@ footer{
                 text-decoration: none;
             }
         }
-        li:hover .sous_menu{
-            display: flex;
-            flex-direction: row;       
+        li:hover {
+            .sous_menu{
+                display: flex;
+                flex-direction: row;
+            }
         }
     }
 }
@@ -286,50 +289,128 @@ footer{
     align-items: center;
     flex-direction: column;
     margin:10%;
-    border-radius: 20px;
+    border-radius: 1em;
     h1 {
-        font-size:60px;
+        font-size:3em;
         font-weight: bold;
         color: white;
         text-shadow: 0 0 8px gray;
     }
     p {
-        font-size: 20px;
+        font-size: 1em;
         text-align: center;
         color: white;
-        text-shadow: 2px 2px 8px gray;
     }
     .pack {
         h2 {
-            font-size:50px;
+            font-size:2.5em;
             text-shadow: 0 0 10px gray;
             text-align: center;
         }
         a {
-            width: 356px;
+            width: 17.8em;
         }
-        img {
-            width: 356px;
-        }
-    }
-    #Sdeco27, #Somoi, #Spinocchiop {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 50px;
-        flex-wrap: wrap;
-        li {
+        ul {
             display: flex;
-            flex-direction:column;
+            flex-direction: row;
+            justify-content: center;
+            list-style: none;
+            gap: 2.5em;
+            flex-wrap: wrap;
             p {
-                font-size: 50px;
+                font-size: 30px;
+                color: white;
+                opacity: 65%;
+                text-shadow: 1px 1px 1px black, -1px -1px 1px black, -1px 1px 1px black, 1px -1px 1px black, 0px 0px 10px gray;
             }
             a {
                 text-decoration: none;
+                max-width: 17.8em;
+                max-height: 10em;
+                background-size: 17.8em 10em;
+                border-radius: 1em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                img {
+                    opacity: 70%;
+                    margin-top: 3.25em;
+                    width:3.5em;
+                    height:3.5em;
+                }
             }
             a:hover {
                 transform: scale(1.1);
+                transition-duration: 500ms;
+                img {
+                    transform: scale(1.35);
+                    transition-duration: 500ms;
+                    opacity: 85%;
+                }
+                p {
+                    opacity: 95%;
+                }
+            }
+            #ai {
+                background-image: url(images/ai.jpg);
+            }
+            #psychogram {
+                background-image: url(images/psychogram.jpg) ;
+            }
+            #mannequin {
+                background-image: url(images/mannequin.jpg) ;
+            }
+            #neverland {
+                background-image: url(images/neverland.jpg) ;
+            }
+            #hibana {
+                background-image: url(images/hibana.jpg) ;
+            }
+            #imglad {
+                background-image: url(images/im_glad.jpg) ;
+            }
+            #allineed {
+                background-image: url(images/all_i_need.jpg) ;
+            }
+            #magicalchocolate {
+                background-image: url(images/magical_girl.jpg) ;
+            }
+            #whatsinside {
+                background-image: url(images/whats_inside.jpg) ;
+            }
+            #worlddomination {
+                background-image: url(images/world_domination.jpg) ;
+            }
+            #slowmotion {
+                background-image: url(images/slowmotion.jpg) ;
+            }
+            #nee {
+                background-image: url(images/neeneenee.jpg) ;
+            }
+            #yourehere {
+                background-image: url(images/cause_youre_here.jpg) ;
+            }
+            #nonbreath {
+                background-image: url(images/non-breath_oblige.jpg) ;
+            }
+            #greenlightserenade {
+                background-image: url(images/greenlight_serenade.jpg) ;
+            }
+            #teo {
+                background-image: url(images/teo.jpg) ;
+            }
+            #gonnajump {
+                background-image: url(images/if_gonna_jump.jpg) ;
             }
         }
+    }
+}
+
+/* Responsive */
+
+@media (max-width: 1020px) {
+    body {
+        font-size: 16px;
     }
 }

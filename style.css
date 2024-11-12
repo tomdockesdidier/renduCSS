@@ -151,10 +151,6 @@ footer {
             border: 1px solid gray;
             list-style: none;
 
-            a:active {
-                background-color: gray;
-            }
-
             a:hover {
                 text-shadow: 0 0 10px aqua, 0 0 5px aqua;
             }
@@ -271,7 +267,8 @@ footer {
         margin-bottom: 50px;
 
         h2:hover {
-            transform: scale(1.05);
+            transform: scale(1.1);
+            transition-duration: 500ms;
         }
 
         .name {
@@ -288,7 +285,8 @@ footer {
             }
 
             .logo:hover {
-                transform: scale(1.1);
+                transform: scale(1.2);
+                transition-duration: 500ms;
             }
 
             a {
@@ -325,7 +323,8 @@ footer {
 
             .button:hover {
                 box-shadow: 3px 3px 4px black;
-                transform: scale(1.05);
+                transform: scale(1.1);
+                transition-duration: 500ms;
             }
         }
     }

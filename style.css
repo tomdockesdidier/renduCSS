@@ -9,20 +9,21 @@ body {
 
 h2 {
     font-size: 20px;
-    font-weight:bold;
+    font-weight: bold;
     color: white;
 }
 
 /* Header */
 
-header{
+header {
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-size:1.5em;
+    font-size: 1.5em;
     width: 100%;
+
     .bandehaut {
         height: 10%;
         display: flex;
@@ -30,94 +31,110 @@ header{
         background-color: rgb(41, 41, 41);
         width: 100%;
     }
+
     /* Menu déroulant */
     .menuderoulant {
         height: 50px;
         margin-top: 3vh;
         margin-bottom: 40px;
         list-style: none;
+
         .sous_menu {
             list-style-type: none;
             display: none;
             padding: 0;
             margin: 0;
             position: absolute;
+
             li {
                 float: none;
-                margin:0;
+                margin: 0;
                 padding: 0;
-                border-top:1px solid transparent;
+                border-top: 1px solid transparent;
                 border-right: 1px solid transparent;
-                a:link, a:visited {
+
+                a:link,
+                a:visited {
                     display: block;
                     color: white;
                     text-decoration: none;
                     background-color: rgb(32, 32, 32);
                 }
-                a:hover{
+
+                a:hover {
                     text-shadow: 0 0 10px aqua, 0 0 5px aqua;
                 }
             }
         }
+
         li {
             float: left;
             width: 150px;
             border: 1px solid gray;
-            list-style:none;
+            list-style: none;
+
             a:active {
                 background-color: gray;
             }
+
             a:hover {
                 text-shadow: 0 0 10px aqua, 0 0 5px aqua;
             }
-            a:link, a:visited {
+
+            a:link,
+            a:visited {
                 display: block;
                 color: white;
-                background:rgb(41, 41, 41);
+                background: rgb(41, 41, 41);
                 text-align: center;
                 text-decoration: none;
             }
         }
-        li:hover .sous_menu{
+
+        li:hover .sous_menu {
             display: block;
         }
     }
+
     .imgH {
-        width:100%;
+        width: 100%;
         min-height: 500px;
         background-image: url(images/hatsune_miku.jpg);
-        background-size:100%;
+        background-size: 100%;
         background-repeat: no-repeat;
-        margin-bottom:-200px;
+        margin-bottom: -200px;
     }
 }
 
 /* Footer */
 
-footer{
-    min-height:300px;
-    border-top: 1px solid  gray;
+footer {
+    min-height: 300px;
+    border-top: 1px solid gray;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: row;
-    font-size:32px;
+    font-size: 32px;
     width: 100%;
-    align-items:center;
+    align-items: center;
     justify-content: left;
     background-color: rgb(15, 15, 15);
+
     /* Menu déroulant du bas */
     .menu {
         width: 60px;
         min-height: 50px;
         list-style: none;
+
         .sous_menu {
             transform: translate(170px, -100%);
             list-style-type: none;
             display: none;
             padding: 0;
             margin: 0;
-            position:absolute;
+            position: absolute;
+
             li {
                 .miku {
                     transform: translateY(-17px);
@@ -125,28 +142,34 @@ footer{
                 }
             }
         }
+
         li {
-            margin:0;
+            margin: 0;
             padding: 0;
             width: 170px;
-            height:100px;
+            height: 100px;
             border: 1px solid gray;
-            list-style:none;
+            list-style: none;
+
             a:active {
                 background-color: gray;
             }
+
             a:hover {
                 text-shadow: 0 0 10px aqua, 0 0 5px aqua;
             }
-            a:link, a:visited {
+
+            a:link,
+            a:visited {
                 display: block;
                 color: white;
                 text-align: center;
                 text-decoration: none;
             }
         }
+
         li:hover {
-            .sous_menu{
+            .sous_menu {
                 display: flex;
                 flex-direction: row;
             }
@@ -160,18 +183,20 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin:10%;
+    margin: 10%;
     border-radius: 20px;
     box-shadow: 0 0 7px 1px turquoise;
+
     h1 {
-        font-size:60px;
+        font-size: 60px;
         font-weight: bold;
         color: white;
         text-shadow: 0 0 8px gray;
     }
 }
 
-#bio p, #Lartistes p {
+#bio p,
+#Lartistes p {
     font-size: 30px;
     text-align: center;
     color: white;
@@ -185,95 +210,119 @@ footer{
     flex-direction: column;
     align-items: center;
     margin: 15%;
+
     #pinocchiop {
-        box-shadow: 0 0 7px 1px rgb(255,75,140);
+        box-shadow: 0 0 7px 1px rgb(255, 75, 140);
         background-color: rgb(54, 15, 30);
+
         .button {
             background-color: rgb(63, 190, 163);
         }
+
         .name {
-            text-shadow: 0 0 3px rgb(255,75,140);
+            text-shadow: 0 0 3px rgb(255, 75, 140);
         }
+
         .name:hover {
-            text-shadow: 0 0 10px rgb(255,75,140);
+            text-shadow: 0 0 10px rgb(255, 75, 140);
         }
     }
+
     #deco27 {
-        box-shadow: 0 0 7px 1px rgb(30,19,17);
+        box-shadow: 0 0 7px 1px rgb(30, 19, 17);
         background-color: rgb(27, 25, 25);
+
         .button {
             background-color: white;
+
             p {
                 color: black;
             }
         }
+
         .name {
             text-shadow: 0 0 6px gray;
         }
+
         .name:hover {
             text-shadow: 0 0 10px gray;
-        }    
+        }
     }
+
     #omoi {
         box-shadow: 0 0 7px 1px #e0fdf9;
-        background-color:#334240 ;
+        background-color: #334240;
+
         .button {
             background-color: black;
         }
+
         .name {
             text-shadow: 0 0 3px #e0fdf9;
         }
+
         .name:hover {
             text-shadow: 0 0 10px #e0fdf9;
         }
     }
+
     .artiste {
         border-radius: 20px;
         margin-bottom: 50px;
+
         h2:hover {
             transform: scale(1.05);
         }
+
         .name {
             display: flex;
             flex-direction: row;
             justify-content: center;
             gap: 50px;
             margin-right: 150px;
-            margin-top:10px;
+            margin-top: 10px;
+
             .logo {
                 border-radius: 200px;
-                max-height:100px;
+                max-height: 100px;
             }
+
             .logo:hover {
                 transform: scale(1.1);
             }
+
             a {
                 text-decoration: none;
             }
         }
+
         .description {
             margin-left: 50px;
             margin-right: 50px;
         }
+
         .links {
             text-decoration: none;
             display: flex;
             flex-direction: row;
             justify-content: center;
-            gap:50px;
+            gap: 50px;
+
             .button {
                 display: block;
                 min-height: 20px;
                 min-width: 250px;
                 text-align: center;
                 text-decoration: none;
-                margin-bottom:10px;
-                border-radius:50px;
+                margin-bottom: 10px;
+                border-radius: 50px;
+
                 p {
                     margin-top: 10px;
                     margin-bottom: 10px;
                 }
             }
+
             .button:hover {
                 box-shadow: 3px 3px 4px black;
                 transform: scale(1.05);
@@ -288,28 +337,33 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin:10%;
+    margin: 10%;
     border-radius: 1em;
+
     h1 {
-        font-size:3em;
+        font-size: 3em;
         font-weight: bold;
         color: white;
         text-shadow: 0 0 8px gray;
     }
+
     p {
         font-size: 1em;
         text-align: center;
         color: white;
     }
+
     .pack {
         h2 {
-            font-size:2.5em;
+            font-size: 2.5em;
             text-shadow: 0 0 10px gray;
             text-align: center;
         }
+
         a {
             width: 17.8em;
         }
+
         ul {
             display: flex;
             flex-direction: row;
@@ -317,12 +371,14 @@ footer{
             list-style: none;
             gap: 2.5em;
             flex-wrap: wrap;
+
             p {
                 font-size: 30px;
                 color: white;
                 opacity: 65%;
                 text-shadow: 1px 1px 1px black, -1px -1px 1px black, -1px 1px 1px black, 1px -1px 1px black, 0px 0px 10px gray;
             }
+
             a {
                 text-decoration: none;
                 max-width: 17.8em;
@@ -333,76 +389,48 @@ footer{
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-between;
+
                 img {
                     opacity: 70%;
                     margin-top: 3.25em;
-                    width:3.5em;
-                    height:3.5em;
+                    width: 3.5em;
+                    height: 3.5em;
                 }
             }
+
             a:hover {
                 transform: scale(1.1);
                 transition-duration: 500ms;
+
                 img {
                     transform: scale(1.35);
                     transition-duration: 500ms;
                     opacity: 85%;
                 }
+
                 p {
                     opacity: 95%;
                 }
             }
-            #ai {
-                background-image: url(images/ai.jpg);
-            }
-            #psychogram {
-                background-image: url(images/psychogram.jpg) ;
-            }
-            #mannequin {
-                background-image: url(images/mannequin.jpg) ;
-            }
-            #neverland {
-                background-image: url(images/neverland.jpg) ;
-            }
-            #hibana {
-                background-image: url(images/hibana.jpg) ;
-            }
-            #imglad {
-                background-image: url(images/im_glad.jpg) ;
-            }
-            #allineed {
-                background-image: url(images/all_i_need.jpg) ;
-            }
-            #magicalchocolate {
-                background-image: url(images/magical_girl.jpg) ;
-            }
-            #whatsinside {
-                background-image: url(images/whats_inside.jpg) ;
-            }
-            #worlddomination {
-                background-image: url(images/world_domination.jpg) ;
-            }
-            #slowmotion {
-                background-image: url(images/slowmotion.jpg) ;
-            }
-            #nee {
-                background-image: url(images/neeneenee.jpg) ;
-            }
-            #yourehere {
-                background-image: url(images/cause_youre_here.jpg) ;
-            }
-            #nonbreath {
-                background-image: url(images/non-breath_oblige.jpg) ;
-            }
-            #greenlightserenade {
-                background-image: url(images/greenlight_serenade.jpg) ;
-            }
-            #teo {
-                background-image: url(images/teo.jpg) ;
-            }
-            #gonnajump {
-                background-image: url(images/if_gonna_jump.jpg) ;
-            }
+            
+            /* Liste d'images des chansons */
+            #ai {background-image: url(images/ai.jpg);}
+            #psychogram {background-image: url(images/psychogram.jpg);}
+            #mannequin {background-image: url(images/mannequin.jpg);}
+            #neverland {background-image: url(images/neverland.jpg);}
+            #hibana {background-image: url(images/hibana.jpg);}
+            #imglad {background-image: url(images/im_glad.jpg);}
+            #allineed {background-image: url(images/all_i_need.jpg);}
+            #magicalchocolate {background-image: url(images/magical_girl.jpg);}
+            #whatsinside {background-image: url(images/whats_inside.jpg);}
+            #worlddomination {background-image: url(images/world_domination.jpg);}
+            #slowmotion {background-image: url(images/slowmotion.jpg);}
+            #nee {background-image: url(images/neeneenee.jpg);}
+            #yourehere {background-image: url(images/cause_youre_here.jpg);}
+            #nonbreath {background-image: url(images/non-breath_oblige.jpg);}
+            #greenlightserenade {background-image: url(images/greenlight_serenade.jpg);}
+            #teo {background-image: url(images/teo.jpg);}
+            #gonnajump {background-image: url(images/if_gonna_jump.jpg);}
         }
     }
 }

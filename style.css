@@ -206,7 +206,9 @@ footer {
     flex-direction: column;
     align-items: center;
     margin: 15%;
-
+    h2 {
+        font-size: 40px;
+    }
     #pinocchiop {
         box-shadow: 0 0 7px 1px rgb(255, 75, 140);
         background-color: rgb(54, 15, 30);
@@ -282,6 +284,7 @@ footer {
             .logo {
                 border-radius: 200px;
                 max-height: 100px;
+                margin-top: 3px;
             }
 
             .logo:hover {
